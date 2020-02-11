@@ -73,7 +73,7 @@ class App extends Component {
             <strong>0</strong> item(s) left
           </span>
           <button
-            onClink={this.handleClearCompletedTodos}
+            onClick={this.handleClearCompletedTodos}
             className="clear-completed">Clear completed</button>
         </footer>
       </section>
