@@ -40,7 +40,7 @@ class App extends Component {
   handleCreateTodo = event => {
     if (event.key === "Enter") {
       const newTodo = {
-        userid: 1,
+        userId: 1,
         id: Math.floor(Math.random() * 1000000),
         title: event.target.value,
         completed: false
@@ -48,7 +48,7 @@ class App extends Component {
       const newTodoList = this.state.todos.slice();
       newTodoList.push(newTodo);
       this.setState({ todos: newTodoList });
-      event.target.vale = "";
+      event.target.value = "";
     }
   };
   
