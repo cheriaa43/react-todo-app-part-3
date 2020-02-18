@@ -12,4 +12,4 @@ pages:
   only:
   - master
   variables:
-  PUBLIC_URL: "/git@gitlab.com:Cheriaa/assessment-todo-app-part-2.git" # slash is important
+    PUBLIC_URL: "/assessment-todo-app-part-2" # slash is important
