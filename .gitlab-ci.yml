@@ -11,3 +11,5 @@ pages:
     - public
   only:
   - master
+  variables:
+  PUBLIC_URL: "/your-project-name" # slash is important
