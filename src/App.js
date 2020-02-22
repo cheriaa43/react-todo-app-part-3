@@ -119,17 +119,17 @@ class App extends Component {
           </span>
           <ul className="filters">
             <li>
-              <NavLink exact to="/">
+              <NavLink exact to="/" activeClassName="selected">
                 All
                 </NavLink>
             </li>
             <li>
-              <NavLink exact to="/active">
+              <NavLink exact to="/active" activeClassName="selected">
                 Active
                 </NavLink>
             </li>
             <li>
-              <NavLink exact to="/completed">
+              <NavLink exact to="/completed" activeClassName="selected">
                 Completed
                 </NavLink>
             </li>
