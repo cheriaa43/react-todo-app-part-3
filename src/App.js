@@ -4,7 +4,7 @@ import todosList from "./todos.json";
 import { Route, NavLink } from "react-router-dom";
 import TodoList from "./TodoList.js"
 import { connect } from "react-redux";
-import { addTodo, clearCompletedTodos } from "./actions";
+import { addTodo, clearCompletedTodos, deleteTodo, toggleTodo } from "./actions";
 
 class App extends Component {
   state = {
@@ -111,7 +111,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = {
   addTodo,
-  clearCompletedTodos
+  clearCompletedTodos,
+  deleteTodo,
+  toggleTodo
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

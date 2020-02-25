@@ -1,8 +1,8 @@
-import TodoList from "./TodoList";
+import todos from "./todos.json";
 import { DELETE_TODO, TOGGLE_TODO, ADD_TODO, CLEAR_COMPLETED_TODOS } from "./actions";
 
 const initialState = {
-  todos: TodoList
+  todos: todos
 };
 const todosReducer = (state = initialState, action) => {
     switch (action.type) {
