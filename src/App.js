@@ -64,7 +64,7 @@ class App extends Component {
           <span className="todo-count">
             <strong>
               {
-                this.state.todos.filter(todo => {
+                this.props.todos.filter(todo => {
                   if (todo.completed === false) {
                     return true;
                   }
